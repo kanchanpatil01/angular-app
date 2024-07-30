@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Route } from '@angular/router';
 import { Router } from 'express';
+import { SharedServiceService } from './shared-service.service';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,11 @@ import { Router } from 'express';
 export class AppComponent {
 
   title = 'angular1';
- 
-  click(){
-    // this.router.
+  constructor(private service: SharedServiceService) { }
+
+  onInputChange(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.service.changeData(inputElement.value);
   }
+
 }

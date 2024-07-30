@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MycomponentComponent } from './mycomponent/mycomponent.component';
 import { HighlightDirective } from './highlight.directive';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MycomponentComponent,
-    HighlightDirective
+    HighlightDirective,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
