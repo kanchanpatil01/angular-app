@@ -4,13 +4,13 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MycomponentComponent } from './mycomponent/mycomponent.component';
-import { MydirectiveDirective } from './mydirective.directive';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     MycomponentComponent,
-    MydirectiveDirective
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
